@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply
+  bg-gray-900
+  flex
+  flex-col
+  items-center
+  justify-center
+  h-screen
+  w-full;
+}
+
+.container {
+  @apply
+  p-4
+  max-w-screen-sm
+  w-screen
+}
+
+.container > .title {
+  @apply
+  text-3xl
+  text-center
+  font-extrabold
+  tracking-tight
+  text-white
+  mb-4
+}
+
+.container > .amount {
+  @apply
+  text-center
+  text-7xl
+  font-extrabold
+  text-blue-600
+  mb-5
+}
+
+.currency {
+  @apply
+  text-xl
+  text-white
+}
+
+.forms {
+  @apply bg-white  p-8 mx-auto rounded
+}
+
+.layout {
+  @apply grid grid-cols-6 gap-6
+}
+
+.amount {
+  @apply col-span-6 sm:col-span-6 lg:col-span-6
+}
+
+.select {
+  @apply col-span-6 sm:col-span-3 lg:col-span-3
+}
+
+
+label {
+  @apply block text-sm font-medium text-gray-700 text-left mb-2
+}
+
+input, select {
+  border-width: 2px;
+  height: 42px;
+  width: 100%;
+  padding-left: 12px;
+}
+
+input {
+  @apply mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md
+}
+
+select {
+  @apply focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md rounded-md;
+
+}
+
+button {
+  @apply w-full  rounded-md p-3 mt-6 bg-blue-600 text-white font-bold
+}
